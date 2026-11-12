@@ -1,0 +1,35 @@
+QUEUELESS — FREE GITHUB EDITION v5.1
+
+73 automated functional checks passed.
+
+Account, profile, booking, staff PIN, queue, notification and persistence
+flows were executed directly in JavaScript with browser-storage fixtures.
+The main app's signup, settings, booking and staff forms were also executed
+with a DOM fixture. No Java process or HTTP API is required by this version.
+
+Checked: validation, duplicate email/booking checks, salted password/PIN
+hashes, saved profile edits, customer view filtering, local staff contacts,
+queue order, in-app reminders, calling/completing visits, future booking
+protection, reload/new-tab persistence, sign out, corrupt/blocked storage
+handling, project-path isolation, older account upgrade, asset inclusion,
+script order and install-relative paths.
+
+Sidebar checks cover close/reopen clicks, backdrop, Escape, swipe,
+navigation, resizing and repeated actions in 320, 390, 768, 900, 901 and
+1440-pixel viewport modes. These are DOM logic checks, not screenshots.
+
+A physical iPhone test, full browser visual test, service-worker offline
+test and public GitHub deployment were not performed in this environment.
+Publish the files to your repository and check the final site on your devices.
+
+This edition stores data per browser. It does not provide a shared live
+patient server, central accounts, real provider reservations or server-side
+access control. README.md explains these limits and the update instructions.
+
+Publishing bundle: directory and browser storage are included in app.js;
+visual polish is included in style.css. No extra script/style dependency
+is required. The GitHub ZIP contains the same core filenames as before.
+
+v5.1 update: the requested PIN 22122 is preconfigured for staff/admin.
+Tests cover five-digit form validation, exact PIN login, wrong-PIN rejection,
+repeat login and updating an older PIN without changing customers/bookings.
